@@ -16,7 +16,7 @@ app.use("/api/users", UserRoute)
 
 app.get("/",(req,res) => {
     console.log("Nodemailer API is running !");
-    res.send("Nodemailer API is running !");
+    res.send("<h1>Nodemailer API is running !</h1>");
 })
 
 app.listen(process.env.PORT, () => {
