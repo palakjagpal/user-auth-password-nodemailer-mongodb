@@ -14,6 +14,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use("/api/users", UserRoute)
 
+app.use("/",(req,res) => {
+    console.log("Nodemailer API is running !")
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`)
 })
